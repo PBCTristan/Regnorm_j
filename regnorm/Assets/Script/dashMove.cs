@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class dashMove : MonoBehaviour
 {
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D rrigidbody;
     public float dashSpeed;
     private float dashTime;
     public float startDashTime;
@@ -14,7 +14,7 @@ public class dashMove : MonoBehaviour
     private float doubleTapTime;
     private void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rrigidbody = GetComponent<Rigidbody2D>();
         dashTime = startDashTime;
     }
 
@@ -53,18 +53,18 @@ public class dashMove : MonoBehaviour
             {
                 direction = 0;
                 dashTime = startDashTime;
-                rigidbody.velocity = Vector2.zero;
+                rrigidbody.velocity = Vector2.zero;
             }
             else
             {
                 dashTime -= Time.deltaTime;
                 if (direction==1)
                 {
-                    rigidbody.velocity = Vector2.left *dashSpeed;
+                    rrigidbody.velocity = Vector2.left *dashSpeed;
                 }
                 else if (direction==2)
                 {
-                    rigidbody.velocity = Vector2.right *dashSpeed;
+                    rrigidbody.velocity = Vector2.right *dashSpeed;
                 }
             }
         }

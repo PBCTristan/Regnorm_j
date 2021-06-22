@@ -20,14 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="debc0ad8-3284-4487-b2e2-7fccde69cb04" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.regnorm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.regnorm/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.regnorm/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.regnorm/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.regnorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.regnorm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bomb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bomb.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/blast.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/blast.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/BlastDestroyTiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/BlastDestroyTiles.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/BombBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/BombBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/dashMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/dashMove.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +38,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/dashMove.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/roquetteBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/sabreBehiviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/boulle_rose.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -52,6 +53,10 @@
         <option value="$PROJECT_DIR$/Assets/dashMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/BombBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/BlastDestroyTiles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/boulle_rose.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/dashMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/roquetteBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/sabreBehiviour.cs" />
       </list>
     </option>
   </component>
@@ -104,6 +109,7 @@
       <workItem from="1619600186273" duration="5525000" />
       <workItem from="1619647539510" duration="7516000" />
       <workItem from="1619678475756" duration="4739000" />
+      <workItem from="1624361752377" duration="2217000" />
     </task>
     <servers />
   </component>
