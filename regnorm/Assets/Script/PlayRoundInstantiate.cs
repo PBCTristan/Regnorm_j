@@ -39,9 +39,10 @@ public class PlayRoundInstantiate : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetMouseButtonDown(1) && Players[playerturn].GetChild(0).GetComponent<Weapon>().bombs > 0)
         {
             Instantiate(bomb, Players[playerturn].GetChild(0).position, Quaternion.identity);
+            Players[playerturn].GetChild(0).GetComponent<Weapon>().bombs--;
             timer = 13500;
         }
         else if (timer == 15000 || Input.GetKeyDown(KeyCode.V))

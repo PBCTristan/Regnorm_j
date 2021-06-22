@@ -12,7 +12,7 @@ public class ChestScript : MonoBehaviour
     {
         Debug.Log("chestplacing");
         pos.position = GameObject.Find("GameManager").GetComponent<PlayRoundInstantiate>().spawnpoints[Random.Range(0, 3)].position - new Vector3(0, 1.14f, 0);
-        weapon = Random.Range(0, 3);
+        weapon = Random.Range(1, 5);
     }
 
     void Update()
@@ -29,11 +29,18 @@ public class ChestScript : MonoBehaviour
 
     void TakeItem()
     {
-        List<int> w = Player.GetChild(0).GetComponent<Weapon>().weapons;
-        if (!w.Contains(weapon))
+        if (weapon > 3)
         {
-            w.Add(weapon);
+            Player.GetChild(0).GetComponent<Weapon>().Addbombs(weapon-3);
             Destroy(this.gameObject);
+        }
+        else
+        {
+            if (!Player.GetChild(0).GetComponent<Weapon>().weapons.Contains(weapon))
+            {
+                Player.GetChild(0).GetComponent<Weapon>().Addweapon(weapon);
+                Destroy(this.gameObject);
+            }
         }
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Weapon : MonoBehaviour
 {
@@ -9,6 +10,10 @@ public class Weapon : MonoBehaviour
     public List<GameObject> Prefabs;
     public List<int> weapons;
     public int weaponsindex;
+    public int bombs;
+    public List<Sprite> sprites;
+
+    public Transform inv;
 
     private void Start()
     {
@@ -29,5 +34,17 @@ public class Weapon : MonoBehaviour
     void Shoot()
     {
         Instantiate(Prefabs[weapons[weaponsindex]], firePoint.position, firePoint.rotation);
+    }
+
+    public void Addweapon(int n)
+    {
+        weapons.Add(n);
+        Debug.Log("fef");
+        inv.GetChild(0).GetChild(weapons.Count - 1).GetComponent<Image>().sprite = sprites[n];
+    }
+
+    public void Addbombs(int n)
+    {
+        bombs += weaponsindex;
     }
 }

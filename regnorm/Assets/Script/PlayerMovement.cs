@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -28,6 +29,10 @@ public class PlayerMovement : MonoBehaviour
     private float xMovement;
     public static PlayerMovement instance;
 
+    //trop de variables ici mdr
+    public bool inventory = false;
+    public GameObject inv;
+
 
     private void Awake()
     {
@@ -41,37 +46,68 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        isGrounded = Physics2D.OverlapCircle(grounded.position, groundedRadius, collisionLayers);
-        xMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
-
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (inventory)
         {
-            isJumping = true;
-        }
-
-        if (Input.GetButtonDown("bigJump") &&isGrounded)
-        {
-            bigJump = true;
-        }
-
-        /*if (Input.GetKeyDown(KeyCode.C) && !isGrounded && xMovement != 0)
-        {
-            isDashing = true;
-            CurrentDashTimer = StartDashTimer;
-            rigidBody.velocity = Vector2.zero;
-            DashDirection = (int) xMovement;
-        }
-
-        if (isDashing)
-        {
-            rigidBody.velocity = transform.right * DashDirection * DashForce;
-            CurrentDashTimer -= Time.deltaTime;
-            if (CurrentDashTimer<=0)
+            if (Input.GetButtonDown("OpenInv"))
             {
-                isDashing = false;
+                inventory = false;
+                inv.SetActive(false);
             }
-        }*/
-        Flip(rigidBody.velocity.x);
+            else
+            {
+                if (Input.GetButtonDown("Left"))
+                {
+                    if (this.gameObject.transform.GetComponent<Weapon>().weaponsindex > 0)
+                    {
+                        this.gameObject.transform.GetComponent<Weapon>().weaponsindex--;
+                        inv.transform.GetChild(1).position += new Vector3(-1, 0, 0);
+                    }
+                    else
+                    {
+                        this.gameObject.transform.GetComponent<Weapon>().weaponsindex = this.gameObject.transform.GetComponent<Weapon>().weapons.Count - 1;
+                        inv.transform.GetChild(1).position += new Vector3(this.gameObject.transform.GetComponent<Weapon>().weapons.Count - 1, 0, 0);
+                    }
+                }
+
+                if (Input.GetButtonDown("Right"))
+                {
+                    if (this.gameObject.transform.GetComponent<Weapon>().weaponsindex == this.gameObject.transform.GetComponent<Weapon>().weapons.Count - 1)
+                    {
+                        this.gameObject.transform.GetComponent<Weapon>().weaponsindex = 0;
+                        inv.transform.GetChild(1).position += new Vector3(1 - this.gameObject.transform.GetComponent<Weapon>().weapons.Count, 0, 0);
+
+                    }
+                    else
+                    {
+                        this.gameObject.transform.GetComponent<Weapon>().weaponsindex++;
+                        inv.transform.GetChild(1).position += new Vector3(1, 0, 0);
+                    }
+                }
+            }
+        }
+        else
+        {
+
+            if (Input.GetButtonDown("OpenInv"))
+            {
+                inventory = true;
+                inv.SetActive(true);
+            }
+            isGrounded = Physics2D.OverlapCircle(grounded.position, groundedRadius, collisionLayers);
+            xMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+
+            if (Input.GetButtonDown("Jump") && isGrounded)
+            {
+                isJumping = true;
+            }
+
+            if (Input.GetButtonDown("bigJump") && isGrounded)
+            {
+                bigJump = true;
+            }
+
+            Flip(rigidBody.velocity.x);
+        }
     }
 
     void MovePlayer(float _xMovement)
