@@ -23,9 +23,18 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.regnorm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.regnorm/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.regnorm/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.regnorm/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.regnorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.regnorm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/dashMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/dashMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BetterPlayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BetterPlayer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/pompe.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/pompe.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/roquette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/roquette.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/sabre.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/sabre.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene palette samuelle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene palette samuelle.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CharacterSelect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CharacterSelect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/GameInfoScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/GameInfoScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayRoundInstantiate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayRoundInstantiate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/sabreBehiviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/sabreBehiviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
@@ -38,8 +47,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Script/roquetteBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/sabreBehiviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/roquetteBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/boulle_rose.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -48,15 +57,21 @@
         <option value="$PROJECT_DIR$/Assets/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/EnemyHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Bullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PlayerMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PlayRoundInstantiate.cs" />
         <option value="$PROJECT_DIR$/Assets/dashMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/BombBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/BlastDestroyTiles.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/boulle_rose.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/dashMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/roquetteBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/followCam.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/dashMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/sabreBehiviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/camFllow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayRoundInstantiate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/CharacterSelect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/GameInfoScript.cs" />
       </list>
     </option>
   </component>
@@ -110,6 +125,9 @@
       <workItem from="1619647539510" duration="7516000" />
       <workItem from="1619678475756" duration="4739000" />
       <workItem from="1624361752377" duration="2217000" />
+      <workItem from="1624413327281" duration="469000" />
+      <workItem from="1624414661039" duration="1557000" />
+      <workItem from="1624416293510" duration="2790000" />
     </task>
     <servers />
   </component>
@@ -129,5 +147,15 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="70" y="95" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1624418418223">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="70" y="95" width="1736" height="856" key="VCS.FileHistoryDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624418418223" />
+    <state x="0" y="0" width="1893" height="1027" key="dock-window-1" timestamp="1624416609535">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="0" width="1893" height="1027" key="dock-window-1/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624416609535" />
   </component>
 </project>

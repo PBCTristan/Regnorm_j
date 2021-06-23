@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class GameInfoScript : MonoBehaviour
 {
-    public int[] colors = {0, 0, 0, 0};
-    public bool[] isAI = { false, false, false, false };
+    public bool[] isAI = { true, true, true, true };
 
     void Start()
     {

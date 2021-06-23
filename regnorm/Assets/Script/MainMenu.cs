@@ -85,6 +85,8 @@ public class MainMenu : MonoBehaviour
         settingsMenu.SetActive(false);
         secondMenu.SetActive(false);
         mainMenu.SetActive(true);
+        Solomenu.SetActive(false);
+        Multimenu.SetActive(false);
     }
 
     public void Quit()

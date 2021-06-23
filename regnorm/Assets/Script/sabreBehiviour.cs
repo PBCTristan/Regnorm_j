@@ -8,7 +8,6 @@ public class sabreBehiviour : MonoBehaviour
     public int damage = 30;
     public float distance;
     [SerializeField] private bool isColliding;
-    public Transform hitbox;
     public Rigidbody2D rb;
     public Transform bullethb;
     private float radius;
@@ -26,7 +25,7 @@ public class sabreBehiviour : MonoBehaviour
     private void Update()
     {
         timer++;
-        isColliding = Physics2D.OverlapCircle(hitbox.position, radius, whatIsSolid);
+        isColliding = Physics2D.OverlapCircle(this.gameObject.transform.position, radius, whatIsSolid); //Physics2D.OverlapCircle(hitbox.position, radius, whatIsSolid);
 
         if (isColliding)
         {

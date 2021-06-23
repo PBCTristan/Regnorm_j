@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 5908178926207699988}
   - component: {fileID: 7630635132641894416}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: pompe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     
     //animator
     public Animator animator;
+    private bool m_FacingRight = true;
 
     public Rigidbody2D rigidBody;
     public SpriteRenderer spriteRenderer;
@@ -138,12 +139,20 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Flip (float _velocity)
-    {
-        if (_velocity > 0.1f)
-            spriteRenderer.flipX = false;
-        if (_velocity < -0.1f)
-            spriteRenderer.flipX = true;
-    }
+        {
+            if (_velocity > 0.1f && !m_FacingRight)
+            {
+                //spriteRenderer.flipX = false;
+                m_FacingRight = true;
+                transform.Rotate(0f, 180f,0f);
+            }
+            else if (_velocity < -0.1f && m_FacingRight)
+            {
+                m_FacingRight = false;
+                transform.Rotate(0f, 180f,0f);
+                //transform.Rotate(0f, 0f,0f);
+            }
+        }
 
     private void OnDrawGizmos()
     {

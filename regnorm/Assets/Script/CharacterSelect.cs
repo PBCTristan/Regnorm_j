@@ -12,31 +12,12 @@ public class CharacterSelect : MonoBehaviour
 
     public int i;
 
-    public void LeftButton()
-    {
-        if (gameinfo.GetComponent<GameInfoScript>().colors[i] > 0)
-        {
-            gameinfo.GetComponent<GameInfoScript>().colors[i]--;
-        }
-        else
-        {
-            gameinfo.GetComponent<GameInfoScript>().colors[i] = sprites.Count - 1;
-        }
-        charimage.sprite = sprites[gameinfo.GetComponent<GameInfoScript>().colors[i]];
-    }
-
-    public void RightButton()
-    {
-        gameinfo.GetComponent<GameInfoScript>().colors[i] = (gameinfo.GetComponent<GameInfoScript>().colors[i] + 1) % (sprites.Count);
-        charimage.sprite = sprites[gameinfo.GetComponent<GameInfoScript>().colors[i]];
-    }
-
     public void PlayerButton()
     {
         if (gameinfo.GetComponent<GameInfoScript>().isAI[i])
         {
             gameinfo.GetComponent<GameInfoScript>().isAI[i] = false;
-            charimage.sprite = sprites[gameinfo.GetComponent<GameInfoScript>().colors[i]];
+            charimage.sprite = sprites[1];
             Playertext.text = "Player";
         }
         else

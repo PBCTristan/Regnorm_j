@@ -17,6 +17,7 @@ public class PlayRoundInstantiate : MonoBehaviour
     public int playerturn = 0;
     [SerializeField] private int turn = 0;
     [SerializeField] private int timer = 0;
+    //public Transform camera;
 
 
 
@@ -39,6 +40,7 @@ public class PlayRoundInstantiate : MonoBehaviour
 
     void Update()
     {
+        //camera.GetComponent<camFllow>().moche(Players[playerturn]);
         if (Input.GetMouseButtonDown(1) && Players[playerturn].GetChild(0).GetComponent<Weapon>().bombs > 0)
         {
             Instantiate(bomb, Players[playerturn].GetChild(0).position, Quaternion.identity);
