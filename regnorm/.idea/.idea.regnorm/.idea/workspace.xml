@@ -20,23 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="debc0ad8-3284-4487-b2e2-7fccde69cb04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.regnorm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.regnorm/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.regnorm/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.regnorm/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.regnorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.regnorm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BetterPlayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BetterPlayer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/pompe.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/pompe.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/roquette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/roquette.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/sabre.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/sabre.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene palette samuelle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene palette samuelle.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CharacterSelect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CharacterSelect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/GameInfoScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/GameInfoScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayRoundInstantiate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayRoundInstantiate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/sabreBehiviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/sabreBehiviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player/BetterPlayer.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Player/BetterPlayer.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player/Sprite 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Player/Sprite 1.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player/imo_sabre.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Player/imo_sabre.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +116,7 @@
       <workItem from="1624361752377" duration="2217000" />
       <workItem from="1624413327281" duration="469000" />
       <workItem from="1624414661039" duration="1557000" />
-      <workItem from="1624416293510" duration="2790000" />
+      <workItem from="1624416293510" duration="2842000" />
     </task>
     <servers />
   </component>
